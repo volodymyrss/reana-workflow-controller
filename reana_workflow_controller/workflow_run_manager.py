@@ -187,6 +187,7 @@ class KubernetesWorkflowRunManager(WorkflowRunManager):
             'name': 'default-shared-volume',
             'hostPath': {
                 'path': SHARED_FS_MAPPING['MOUNT_SOURCE_PATH'],
+                'type': 'DirectoryOrCreate',
             }
         }
     }
